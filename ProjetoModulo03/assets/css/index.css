@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap");
+
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --line-height: 1.5rem;
+    --primary-color: #8B5E3C;
+    --secondary-color: #C69C6D;
+    --tertiary-color: #FFD7BA; 
+    --background-color: #F4F1EB;
+    --text-color: #4E342E;
+    --accent-color: #DDB892; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background:
+        linear-gradient(rgba(244, 241, 235, 0.8), rgba(244, 241, 235, 0.8)),
+        url('/assets/images/background.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+    padding: 0 1rem;
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo1, .logo2 {
+    display: flex; 
+    align-items: center;
+}
+
+.logo1 {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.logo2 {
+    color: var(--accent-color);
+    font-size: 3rem;
+    font-weight: 450;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem; 
+    list-style-type: none; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-weight: var(--bold-font);
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+    color: var(--accent-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* Estilos para a área sobre a empresa */
+.about-company {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.youtube-video {
+    margin:0 auto;
+    display: block;
+}
+.about-company h2, .video-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.about-company p, .video-title {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.image-delivery, .image-store {
+    width: 45px;
+    height: auto; 
+    float: left;
+    margin-right: 40px;
+}
+
+.servicos {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--tertiary-color);
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.servicos h2 {
+    text-align: center;
+    color: var(--tertiary-color);
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.servico-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.servico {
+    flex: 1;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.servico img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para a área de depoimento */
+.clientes-depoimento {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+}
+
+.titulo-depoimento {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.depoimentos {
+    overflow: hidden;
+    position: relative;
+    height: 90px;
+}
+
+.depoimento {
+    display: none;
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: justify;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.depoimento.active {
+    display: block;
+}
+
+button.anterior, button.proximo {
+    background-color: transparent;
+    border: none;
+    color: var(--tertiary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button.anterior {
+    left: 10px;
+}
+
+button.proximo {
+    right: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+/* Estilos para a Área de Contato */
+.contact {
+    background-color: var(--tertiary-color);
+    color: white;
+    text-align: center;
+    width: 550px;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--accent-color);
+}
+
+.pop-in {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.pop-in.show {
+    display: block;
+}

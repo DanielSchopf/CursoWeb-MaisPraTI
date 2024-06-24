@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeanInnovate</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"></a>
+            <h1>
+                <span class="logo1">Bean</span>
+                <span class="logo2">Innovate</span>
+            </h1>
+            <ul>
+                <li class="nav-item"><a href="#inicio" class="nav-link">Inicial</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#clientes" class="nav-link">Clientes</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="inicio" class="about-company">
+            <h2 class="about-title">Sobre a Bean Innovate</h2>
+            <p>Nós somos uma loja especializada em cafés premium, que segue rigorosamente os mais elevados padrões tecnológicos e de qualidade desde o cultivo do grão até a preparação do café. Além de nossa vasta seleção de cafés exclusivos, oferecemos uma variedade de lanches que vão desde opções salgadas até deliciosos doces.</p>
+            <h1 class="video-title"><br>Conheça o nosso método de preparo:</h1>
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/Rmu4mu2V-GQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="servicos" class="servicos">
+            <h2>Serviços</h2>
+            <div class="servico-container">
+                <div class="servico">
+                    <img class="image-delivery" src="./assets/images/moto-delivery.png" alt="Ícone de Moto de Delivery">
+                    <h3>Delivery</h3>
+                    <p>Sem tempo para visitar nossa loja? Não se preocupe! Nós trazemos a experiência Bean Innovate até você. Faça seu pedido online e aproveite nossos deliciosos cafés e lanches no conforto de sua casa ou no escritório.</p>
+                </div>
+                <div class="servico">
+                    <img class="image-store" src="./assets/images/store-image.png" alt="Ícone de Loja">
+                    <h3>Atendimento Presencial</h3>
+                    <p>Venha nos visitar e desfrute de uma experiência única em um ambiente acolhedor e agradável ao mesmo tempo que saboreia nossos cafés premium e deliciosos lanches.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="clientes" class="clientes-depoimento">
+            <h2 class="titulo-depoimento">Depoimento dos nossos clientes</h2>
+            <button class="anterior">&#10094;</button>
+            <div class="depoimentos">
+                <div class="depoimento active">
+                        <h3>João Silva</h3>
+                        <p>"Adoro o café da Bean Innovate, sempre fresco e delicioso!"</p>
+                </div>
+                <div class="depoimento">
+                        <h3>Maria Souza</h3>
+                        <p>"Excelente atendimento e ambiente agradável. Recomendo!"</p>
+                </div>
+                <div class="depoimento">
+                        <h3>Carlos Eduardo</h3>
+                        <p>"Delivery super rápido e produto de muita qualidade!!"</p>
+                </div>
+            </div>
+            <button class="proximo">&#10095;</button>
+        </div>
+
+        <section id="contato" class="contact">
+            <h2>Fale Conosco</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+            <div id="feedback" class="pop-in">
+                <p>Sua mensagem foi enviada com sucesso! Em breve você receberá uma resposta.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Bean Innovate. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
