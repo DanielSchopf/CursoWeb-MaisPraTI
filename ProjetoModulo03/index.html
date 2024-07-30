@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bean Innovate</title>
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 </head>
 <body>
     <header>
@@ -19,6 +21,7 @@
                 <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
                 <li class="nav-item"><a href="#clientes" class="nav-link">Clientes</a></li>
                 <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="#crud" class="nav-link">Sugestões</a></li>
             </ul>
         </nav>
     </header>
@@ -27,8 +30,10 @@
         <div id="inicio" class="about-company">
             <h2 class="about-title">Sobre a Bean Innovate</h2>
             <p>Nós somos uma loja especializada em cafés premium, que segue rigorosamente os mais elevados padrões tecnológicos e de qualidade desde o cultivo do grão até a preparação do café. Além de nossa vasta seleção de cafés exclusivos, oferecemos uma variedade de lanches que vão desde opções salgadas até deliciosos doces.</p>
-            <h1 class="video-title"><br>Conheça o nosso método de preparo:</h1>
-            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/Rmu4mu2V-GQ" frameborder="0" allowfullscreen></iframe>
+            <h1 class="video-title">Conheça o nosso método de preparo:</h1>
+            <div class="video-div">
+                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/Rmu4mu2V-GQ" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
 
         <div id="servicos" class="servicos">
@@ -88,6 +93,26 @@
                 <p>Sua mensagem foi enviada com sucesso! Em breve você receberá uma resposta.</p>
             </div>
         </section>
+
+        <section id="crud">
+            <h2>Área de Sugestões</h2>
+            <form id="crud-form">
+                <div>
+                    <label for="data-name">Nome:</label>
+                    <input type="text" id="data-name">
+                </div>
+                <div>
+                    <label for="data-value">Sugestão:</label>
+                    <input type="text" id="data-value">
+                </div>
+                <button type="button" id="add-btn">Adicionar</button>
+            </form>
+            <div id="data-display">
+                <h3>Dados:</h3>
+                <ul id="data-list"></ul>
+            </div>
+        </section>
+          
     </main>
 
     <footer class="footer">
