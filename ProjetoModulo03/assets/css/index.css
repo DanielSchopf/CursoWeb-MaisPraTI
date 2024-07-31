@@ -391,9 +391,12 @@ button.proximo {
 #data-list li {
     background-color: var(--tertiary-color);
     color: var(--text-color);
-    padding: 0.5rem;
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
     margin: 0.5rem 0;
     border-radius: 5px;
+    border: 1px solid #ccc;
     font-size: 1rem;
     justify-content: space-between;
     align-items: center;

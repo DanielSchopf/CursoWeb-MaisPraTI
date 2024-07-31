@@ -90,23 +90,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const data = JSON.parse(localStorage.getItem('suggestions')) || [];
-        data.push({ name, value });
+        const editId = form.dataset.editId;
+
+        if (editId) {
+            data[editId] = { name, value };
+            delete form.dataset.editId;
+        } else {
+            data.push({ name, value });
+        }
+
         localStorage.setItem('suggestions', JSON.stringify(data));
         displayData();
-    }
-
-    function updateData(id, name, value) {
-        if (!name.trim() || !value.trim()) {
-            alert('Nome e sugestão são obrigatórios.');
-            return;
-        }
-
-        const data = JSON.parse(localStorage.getItem('suggestions')) || [];
-        if (data[id]) {
-            data[id] = { name, value };
-            localStorage.setItem('suggestions', JSON.stringify(data));
-            displayData();
-        }
     }
 
     function deleteData(id) {
