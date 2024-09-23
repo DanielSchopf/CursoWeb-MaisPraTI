@@ -12,6 +12,11 @@
       <sourceFolder url="file://$MODULE_DIR$/Atividades - Módulo 05/Lista07/Atv06" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Atividades - Módulo 05/Lista07/Atv07" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Atividades - Módulo 05/Lista07/Atv08" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Atividades - Módulo 05/Lista08/Atv01-02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Atividades - Módulo 05/Lista08/Atv03-04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Atividades - Módulo 05/Lista08/Atv05-06" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Atividades - Módulo 05/Lista08/Atv07-08" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Atividades - Módulo 05/Lista08" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
